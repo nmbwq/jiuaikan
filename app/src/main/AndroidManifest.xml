@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="top.wzmyyj.zymk">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- 网络通信 -->
+    <application
+        android:name=".app.application.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".view.activity.LaunchActivity"
+            android:configChanges="locale">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".view.activity.MainActivity"
+            android:launchMode="singleTask"
+            />
+        <activity android:name=".view.activity.MoreActivity" />
+        <activity android:name=".view.activity.NewActivity" />
+        <activity android:name=".view.activity.RankActivity" />
+        <activity android:name=".view.activity.DetailsActivity" />
+        <activity android:name=".view.activity.ResultActivity" />
+        <activity android:name=".view.activity.SearchActivity" />
+        <activity android:name=".view.activity.ComicActivity" />
+        <activity android:name=".view.activity.SettingActivity" />
+        <activity android:name=".view.activity.LoginActivity" />
+
+        <activity android:name=".view.activity.TextWebView" />
+        <activity android:name=".view.activity.registActivity" />
+        <activity android:name=".view.activity.MyInfoActivity" />
+
+
+
+
+    </application>
+
+</manifest>

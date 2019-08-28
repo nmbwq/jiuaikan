@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorWhite">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:lines="1"
+            android:maxWidth="150dp"
+            android:text="设置"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/click_bg"
+            android:padding="12dp"
+            android:src="@mipmap/svg_red_nav_bar_back" />
+
+
+        <TextView
+            android:id="@+id/tv_commit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center_vertical"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:maxWidth="150dp"
+            android:text="保存"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp"
+            android:layout_marginRight="15dp"
+            />
+
+
+    </FrameLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/colorLine" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+        <LinearLayout
+            android:id="@+id/ll_name"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/click_bg1"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:text="用户名"
+                android:textColor="@color/colorGray_5"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/tv_name"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:hint="请输入用户名"
+                android:gravity="right|center_vertical"
+                android:textColor="@color/colorGray_5"
+                android:textSize="12sp"
+                android:background="@null"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/colorLine" />
+
+        <LinearLayout
+            android:id="@+id/ll_qianming"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/click_bg1"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:text="个性签名"
+                android:textColor="@color/colorGray_5"
+                android:textSize="14sp" />
+
+
+            <EditText
+                android:id="@+id/tv_qianming"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:hint="请填写自己个性签名"
+                android:gravity="right|center_vertical"
+                android:textColor="@color/colorGray_5"
+                android:textSize="12sp"
+                android:background="@null"
+                />
+        </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/colorLine" />
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_sex"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/click_bg1"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:text="性别"
+                    android:textColor="@color/colorGray_5"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_esx"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:hint="请选择自己性别"
+                    android:gravity="right|center_vertical"
+                    android:textColor="@color/colorGray_5"
+                    android:textSize="12sp"
+                    android:background="@null"
+                    />
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:src="@mipmap/ic_right"
+                    android:layout_marginRight="15dp"
+                    />
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/colorLine" />
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_birstday"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/click_bg1"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:text="星座"
+                    android:textColor="@color/colorGray_5"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_birstday"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:hint="请选择自己的星座"
+                    android:gravity="right|center_vertical"
+                    android:textColor="@color/colorGray_5"
+                    android:textSize="12sp"
+                    android:background="@null"
+                    />
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:src="@mipmap/ic_right"
+                    android:layout_marginRight="15dp"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>
